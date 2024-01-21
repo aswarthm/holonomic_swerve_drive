@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(differential_drive)
+project(swerve_drive)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -179,3 +179,7 @@ catkin_package(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+catkin_install_python(PROGRAMS scripts/diff_tf.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

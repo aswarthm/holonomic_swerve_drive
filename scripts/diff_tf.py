@@ -45,7 +45,7 @@ from geometry_msgs.msg import Quaternion
 from math import sin, cos, pi
 import rospy
 import roslib
-roslib.load_manifest('differential_drive')
+roslib.load_manifest('swerve_drive')
 
 
 #############################################################################
@@ -149,6 +149,7 @@ class DiffTf:
     def update(self):
         #############################################################################
         now = rospy.Time.now()
+        rospy.loginfo(str(now))
         if now > self.t_next:
             elapsed = now - self.then
             self.then = now

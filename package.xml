@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>differential_drive</name>
+  <name>swerve_drive</name>
   <version>0.1.0</version>
   <description>
     The differential_drive packageProvides some basic tools for interfacing a differential-drive 
